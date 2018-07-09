@@ -1,0 +1,703 @@
+/**==========================================**
+        FONTS CSS 
+**===========================================**/
+
+@font-face {font-family: "Chivo Black";
+    src: url("http://db.onlinewebfonts.com/t/cbc42562de982b91847cdf42d93e0c1a.eot");
+    src: url("http://db.onlinewebfonts.com/t/cbc42562de982b91847cdf42d93e0c1a.eot?#iefix") format("embedded-opentype"),
+    url("http://db.onlinewebfonts.com/t/cbc42562de982b91847cdf42d93e0c1a.woff2") format("woff2"),
+    url("http://db.onlinewebfonts.com/t/cbc42562de982b91847cdf42d93e0c1a.woff") format("woff"),
+    url("http://db.onlinewebfonts.com/t/cbc42562de982b91847cdf42d93e0c1a.ttf") format("truetype"),
+    url("http://db.onlinewebfonts.com/t/cbc42562de982b91847cdf42d93e0c1a.svg#Chivo") format("svg");
+}
+
+@font-face {font-family: "Chivo Regular";
+    src: url("http://db.onlinewebfonts.com/t/8237ffd368a85f9ee9886d2d8b79c68b.eot");
+    src: url("//db.onlinewebfonts.com/t/8237ffd368a85f9ee9886d2d8b79c68b.eot?#iefix") format("embedded-opentype"),
+    url("http://db.onlinewebfonts.com/t/8237ffd368a85f9ee9886d2d8b79c68b.woff2") format("woff2"),
+    url("http://db.onlinewebfonts.com/t/8237ffd368a85f9ee9886d2d8b79c68b.woff") format("woff"),
+    url("http://db.onlinewebfonts.com/t/8237ffd368a85f9ee9886d2d8b79c68b.ttf") format("truetype"),
+    url("http://db.onlinewebfonts.com/t/8237ffd368a85f9ee9886d2d8b79c68b.svg#Chivo") format("svg");
+}
+
+.Chivo-Black{
+    font-family: "Chivo Black";
+}
+
+.Chivo-Regular{
+    font-family: "Chivo Regular";
+}
+/**==========================================**
+        COMMON CSS 
+ **===========================================**/
+ body,html{font-family: "Chivo Regular";}
+ hr{border: none; height: 1px; background-color: #ccc;}
+ .left{ float: left}
+ .right{ float: right;}
+ .center{ margin: auto; background-position: center; text-align: center; float: none;}
+ .hide{ display: none;}
+ .visibilty{ visibility: visible;}
+ .inline li{display: inline;}
+ .list-style-none li{list-style:none;}
+ .display-block{display:block;}
+ .relative{ position: relative;}
+ .absolute{ position: absolute;}
+ .lowercase{ text-transform: lowercase;}
+ .uppercase{ text-transform: uppercase;}
+ .capitalize{ text-transform: capitalize;}
+ .clr{ clear: both;}
+ .bullets-none{ list-style: none;}
+ .full-width{width:100vw;}
+ .full-height{height:100vh;}
+ .overflow_hide{overflow:hidden;}
+ a{
+     color:#fff;
+     &:hover,
+     &:focus{
+        -webkit-transition: background-color 2s ease-out;
+        -moz-transition: background-color 2s ease-out;
+        -o-transition: background-color 2s ease-out;
+        transition: background-color 2s ease-out;
+        }
+    }
+ .border-none{border:none;}
+ .backgroundwhite{ background:white;}
+ .panel {border-style: solid;border-width: 1px;border-color: #d8d8d8;margin-bottom: 1.25rem;padding: 1.25rem;background: #f2f2f2;color: #333333;}
+ .jarallax {min-height: 400px;}
+ /**==========================================**
+         COMMON PADDING CSS 
+  **===========================================**/
+  .padding-0{ padding:0;}
+  .padding-bottom-0{ padding-bottom:0;}
+  .padding-top-5{ padding-top:5px;}
+  .padding-bottom-5{ padding-bottom:5px;}
+  .padding-top-10{ padding-top:10px;}
+  .padding-bottom-10{ padding-bottom:10px;}
+  .padding-top-15{ padding-top:15px;}
+  .padding-bottom-15{ padding-bottom:15px;}
+  .padding-top-20{ padding-top:20px;}
+  .padding-bottom-20{ padding-bottom:20px;}
+  .padding-top-25{ padding-top:25px;}
+  .padding-bottom-25{ padding-bottom:25px;}
+  .padding-top-30{ padding-top:35px;}
+  .padding-bottom-30{ padding-bottom:35px;}
+  /**==========================================**
+         COMMON MARGIN CSS 
+  **===========================================**/
+ .margin-0{ margin:0;}
+ .margin-bottom-0{ margin-bottom:0;}
+ .margin-top-5{ margin-top:5px;}
+ .margin-bottom-5{ margin-bottom:5px;}
+ .margin-top-10{ margin-top:10px;}
+ .margin-bottom-10{ margin-bottom:10px;}
+ .margin-top-15{ margin-top:15px;}
+ .margin-bottom-15{ margin-bottom:15px;}
+ .margin-top-20{ margin-top:20px;}
+ .margin-bottom-20{ margin-bottom:20px;}
+ .margin-top-25{ margin-top:25px;}
+ .margin-bottom-25{ margin-bottom:25px;}
+ .margin-top-30{ margin-top:30px;}
+ .margin-bottom-30{ margin-bottom:30px;}
+ .margin-top-35{ margin-top:35px;}
+ .margin-bottom-35{ margin-bottom:35px;}
+/**==========================================**
+         COMMON SCROLLBAR CSS 
+**===========================================**/
+::-webkit-scrollbar {width: 12px;border: none;}
+::-webkit-scrollbar-track {background-color: #eee;border: none;}
+::-webkit-scrollbar-thumb {background-color: #FFE100;border: none;}
+::selection {background: #FFE100; /* WebKit/Blink Browsers */color: white;}
+::-moz-selection {background: #FFE100; /* Gecko Browsers */color: white;}
+/**==========================================**
+         COMMON INPUT CSS 
+**===========================================**/
+input[type="text"], 
+input[type="password"], 
+input[type="date"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="month"], 
+input[type="week"], 
+input[type="email"], 
+input[type="number"], 
+input[type="search"], 
+input[type="tel"], 
+input[type="time"], 
+input[type="url"], 
+input[type="color"], 
+textarea,
+select{outline: none;resize: none;background: white;border: none;box-shadow: none;color: #6A747B;margin: 0;padding: 10px;width: 100%;}
+input[type="text"]:focus, 
+input[type="password"]:focus, 
+input[type="date"]:focus, 
+input[type="datetime"]:focus, 
+input[type="datetime-local"]:focus, 
+input[type="month"]:focus, 
+input[type="week"]:focus, 
+input[type="email"]:focus, 
+input[type="number"]:focus, 
+input[type="search"]:focus, 
+input[type="tel"]:focus, 
+input[type="time"]:focus, 
+input[type="url"]:focus, 
+input[type="color"]:focus, 
+textarea:focus,
+select:focus{background: white;}
+input[type="text"]:hover, 
+input[type="password"]:hover, 
+input[type="date"]:hover, 
+input[type="datetime"]:hover, 
+input[type="datetime-local"]:hover, 
+input[type="month"]:hover, 
+input[type="week"]:hover, 
+input[type="email"]:hover, 
+input[type="number"]:hover, 
+input[type="search"]:hover, 
+input[type="tel"]:hover, 
+input[type="time"]:hover, 
+input[type="url"]:hover, 
+input[type="color"]:hover, 
+textarea:hover,
+select:hover{background: white;}
+input[type="checkbox"]{margin: 5px 8px 0 0;}
+input[type="checkbox"]:hover{   cursor: pointer;}
+input[type="number"]{padding: 0 0 0 10px;}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{opacity: 1;}
+select{background: #fff url(../assets/icon/select-arrow.png) no-repeat 100% 0px;}
+select:hover{background: #fff url(../assets/icon/select-arrow.png) no-repeat 100% -37px;}
+/**==========================================**
+        FONT AWESOME CSS 
+**===========================================**/
+.fab{font-size: 14px;-moz-transition: color .5s ease-in-out;-webkit-transition: color .5s ease-in-out;}
+.fab-2{font-size: 16px;}
+.fab-3{font-size: 18px;}
+.fab-4{font-size: 24px;}
+.fab-5{font-size: 30px;}
+.fab-6{font-size: 80px;}
+/**==========================================**
+        BACKGROUND COLOR AND FONT COLOR CSS 
+**===========================================**/
+.yellow {background: #FFE100;}
+.black  {background: #000000;}
+.color-yellow{color:#FFE100;}
+.color-black{color:#000;}
+.color-white{color: #fff;}
+.color-yellow-shade{color:#fdd009}
+ /**==========================================**
+        BUTTON CSS 
+  **===========================================**/
+  .button {
+    background-color: #000000;
+    border-radius: 5px;
+    font-family: 'Chivo-Black';
+    position: relative;
+    border: none;
+    z-index: 1;
+    color: white;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    overflow: hidden;
+   }
+    .button:hover:after, .button:focus:after {
+      height: 260%;
+      opacity: 1; }
+    .button:after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+      width: 100%;
+      height: 0;
+      top: 50%;
+      left: 50%;
+      background: #000;
+      opacity: 0;
+      -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+      -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+      -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+      transform: translateX(-50%) translateY(-50%) rotate(45deg); }
+    .button:hover, .button:focus {
+      color: #FFE100;
+      background-color: #FFE100; }
+.button-rounded{
+    border-radius:5px;
+    border: 1px solid #000;color: #000;
+    text-transform: uppercase;
+    display: block;
+    background-color: transparent;
+    outline: 0;
+    clear: both;
+    font-family: "Chivo Black";
+    font-size: 15px;
+}
+/**==========================================**
+        SOCIAL CSS 
+**===========================================**/
+.dropdown a:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: inset 0.4em;
+    border-color: #fefefe transparent transparent;
+    border-top-style: solid;
+    position:absolute;
+    top: 0.4em;
+    float: right;
+    margin-left: 1em;
+    display: inline-block;
+}
+.dropdown a{
+    position: relative;
+}
+ul.nav{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    margin-top: 2rem;
+    margin-bottom: 8rem;
+    .drop-menu{
+        margin: 0px;
+        animation: fadeInUp 1s;
+        li{
+    padding: 0px;
+    margin: 0px;
+    line-height: normal;
+    a{
+        font-size: 12px;
+        color: #fff;
+    }
+        }
+
+
+      }
+        li{
+            list-style: none;
+            a{
+                color:#000;
+                text-transform: uppercase;
+                font-family: "Chivo Black";
+                font-size: 14px;
+                .fa-angle-down{
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+            }
+
+        }
+
+    
+        .dropdown-pane{
+        position: initial !important;
+        margin: 0 auto;
+        width: 200px;
+        }
+}
+ /**==========================================**
+        SOCIAL CSS 
+**===========================================**/
+ul.social{
+margin: 0 auto;
+padding: 0px;
+    li{
+        padding-right: 10px;
+        &:last-child{
+            padding-right:0px;
+        }
+    }
+}
+ /**==========================================**
+        SIDEBAR CSS 
+**===========================================**/
+.side-bar{
+    position: fixed;
+    width: 17%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0px;
+    z-index: 99;
+    img.logo{
+        max-width: 100vw;
+        height: auto;
+        width: 10vw;
+        margin-top: 30px;
+    }
+    .button.button-rounded{
+        width: 170px;
+        margin: 1.5rem auto;
+    }
+}
+
+ /**==========================================**
+        BANNER CSS 
+**===========================================
+**/
+
+.reveal.wrapper-video{
+    background: none;
+    border: none;
+    padding: 0px;
+    width: 900px;
+    .close-button{
+		width: 40px;
+		height: 40px;
+		color: #fff;
+		border: 2px solid #fff;
+		font-size: 26px;
+		-webkit-border-radius: 40px;
+		border-radius: 40px;
+		text-shadow: none;
+		opacity: 0.9;
+		filter: alpha(opacity=90);
+		-webkit-transition: 0.6s ease-out;
+		-moz-transition: 0.6s ease-out;
+        transition: 0.6s ease-out;
+        &:hover,&:focus{
+            opacity: 0.7;
+            filter: alpha(opacity=90);
+            -webkit-transform: rotateZ(720deg);
+            -moz-transform: rotateZ(720deg);
+            transform: rotateZ(720deg);
+        }
+    }
+}
+
+ /**==========================================**
+        BANNER CSS 
+**===========================================
+**/
+.banner.jarallax{
+    min-height: 100vh;
+}
+.banner{
+    height: 95vh;
+    h1{
+padding: 20rem 0rem 4rem 4rem;
+color: white;
+font-size: 5.4rem;
+font-family: "Chivo Black";
+line-height:4.5rem;
+    }
+}
+span[data-jarallax-element] {
+    display: inline-block;
+}
+.wrapper-widget{
+    .large-6.cell{
+        img{
+            animation: scale 13s linear infinite;
+        }
+        @keyframes scale {
+            50% {
+                -webkit-transform: scale(1.1);
+                -moz-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                -o-transform: scale(1.1);
+                transform: scale(1.1);
+            }
+        }
+&:nth-child(1),&:nth-child(3){
+    padding-right: 0px;
+}
+&:nth-child(3){
+     h2{
+        bottom: 70px;
+    }
+}
+    }
+    border: none;
+    padding-left: 0px;
+    padding-right: 0px;
+    .jarallax {
+        height: 500px;
+        background: #1E1E1E url(../assets/icon/loader.gif) center center no-repeat;
+        overflow: hidden;
+    }
+   
+
+    .loading {
+        background: #1E1E1E url(../assets/icon/loader.gif) center center no-repeat;
+    }
+    .widget-caption{
+        padding: 5rem 0rem 0rem 3rem;
+        background: rgba(0, 0, 0, 0.48);
+        height: 500px; 
+        &:hover, 
+        &:focus{
+            background: rgba(0, 0, 0, 0); 
+            cursor: pointer;
+            -webkit-transition: background-color 2s ease-out;
+            -moz-transition: background-color 2s ease-out;
+            -o-transition: background-color 2s ease-out;
+            transition: background-color 2s ease-out;
+        }
+        h2{
+        
+            font-size: 4.4rem;
+            line-height: 4rem;
+            position: absolute;
+            bottom: 155px;
+            margin: 0px;
+            padding: 0px;
+        }
+        span.play{
+            outline: none;
+            .fab-6{
+                text-align: center;
+                margin-bottom: 20px;
+                &:hover,&:focus{
+                color:#FFE100;
+                }
+            }
+        }
+        .button{
+            background-color:#FFE100;
+            font-family: "Chivo Black";
+            color: #000;
+            font-size: 22px;
+            padding: .75em 1.5em;
+            position: absolute;
+            bottom: 75px;
+            margin: 0px;
+            &:hover, 
+            &:focus{
+                color: #FFE100;
+                background-color: #FFE100;
+            }
+        }
+        ul.social{
+            position: absolute;
+            bottom: 20px;
+        }
+    }
+}
+
+.wrapper-widget.video-inner{
+    
+        .jarallax{
+            height: 350px;
+            min-height: 350px;
+        }
+   
+        span.play {
+            padding: 5%;
+            .fab-6{
+                margin: 0px;
+            }
+        }
+        .large-4.cell{
+&:nth-child(1),&:nth-child(2){
+    padding-right: 0px;
+}
+        }
+        .widget-caption {
+            h2{
+                right: 0px;
+                left: 0px;
+                font-size: 3.4rem;
+                line-height: 3rem;
+            }
+        }
+}
+
+.banner-top-inner{
+    h1{
+        line-height: 7rem;
+        font-size: 116px;
+    }
+    h5{
+        font-size: 3rem;
+        line-height: normal;
+        line-height: 3rem;
+    }
+    ul.grid-x.grid-padding-x.list-style-none{
+        margin-left: 10px;
+        li{
+            border-left: solid #000 1px;
+            padding-left: 10px;
+            height: 105px;
+        }
+    }
+}
+
+ /**==========================================**
+        JARALLAX CSS 
+**===========================================
+**/
+
+
+.jarallax {
+    position: relative;
+    z-index: 0;
+}
+.jarallax > .jarallax-img {
+    position: absolute;
+    object-fit: cover;
+    /* support for plugin https://github.com/bfred-it/object-fit-images */
+    font-family: 'object-fit: cover;';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/**==========================================**
+        FOOTER CSS 
+**===========================================**/
+
+footer.callout {
+    background: #000;
+    .fas {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+    a {
+      color: #fff;
+      &:hover,&:focus{
+          color:#FFE100;
+      }
+    }
+    p {
+        color: white;
+        font-size: 11px;
+        margin: 15px 0px 0px 0px;
+    }
+  }
+  /*animation*/
+  
+  .animated.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+  }
+
+  
+  /**==========================================**
+       MOBILE HEADER CSS
+**===========================================**/
+header.callout{
+    border: none;
+  position: fixed;
+    z-index: 9;
+    width: 100vw;
+    .button{
+        border-radius: 0px;
+        background-color:#EDC900;
+        border: none;
+        margin: 0px;
+&:hover,&:focus{
+    color: #FFf;
+}
+    }
+
+ img.logo {
+        max-width: 100vw;
+        height: auto;
+        width: 9.5vw;
+    } 
+    ul{
+        margin: 0px;
+    }
+}
+
+.off-canvas{
+    border: none;
+    img.logo{
+        max-width: 100vw;
+        height: auto;
+        width: 30vw;
+        margin-bottom: 10px;
+    }
+    ul.nav{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    }
+}
+
+.is-open-left{
+    img.logo{
+        display: none;
+    }
+}
+
+
+
+
+
+
+  /**==========================================**
+        MEDIA QUESRIES CSS
+**===========================================**/
+@media only screen and (max-width: 480px) {
+    .banner{
+        height: auto;
+        .jarallax{
+            height: 50vh;
+            min-height: 50vh;
+        }
+        h1{
+            padding: 10rem 0rem 0rem 1rem;
+            font-size: 1.4rem;
+            text-align: left;
+            line-height: normal;
+        }
+    }
+
+    .wrapper-widget {
+        padding: 0px;
+        margin: 0px;
+        .large-6.cell{
+            &:nth-child(1), &:nth-child(3){
+                padding-right: .625rem;
+                padding-left: .625rem;
+            }
+        }
+        .widget-caption{
+            height: 100%;
+            padding: 5rem 0rem 0rem 2rem;
+            h2{
+                font-size: 1.4rem;
+                text-align: left;
+                line-height: normal;
+                margin: 0px;
+            }
+            .button{
+                padding: 0.85em 2em;
+                margin: 10px 0px 10px 0px;
+                font-size: 14px;
+                border-radius: 3px;
+            }
+
+            .fab{
+                font-size: 1px;
+            }
+        }
+        .jarallax {
+            height: 300px;
+            min-height: 300px;
+        }
+
+    }
+    footer.callout{
+        
+            p{
+                text-align: center;
+                float: none;
+                margin: 0 auto;
+            }
+        
+    }
+}
+
+/*iPad in portrait & landscape  hack*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .side-bar{
+        width: 30%;
+    }
+}
