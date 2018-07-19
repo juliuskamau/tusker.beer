@@ -1,4 +1,28 @@
 /**==========================================**
+  LITE  FONTS CSS 
+**===========================================**/
+@font-face {
+  font-family: "Proxima Nova Light Italic";
+  src: url("http://db.onlinewebfonts.com/t/efc2820473a48f510ce341184e5c2daf.eot");
+  src: url("http://db.onlinewebfonts.com/t/efc2820473a48f510ce341184e5c2daf.eot?#iefix") format("embedded-opentype"), url("http://db.onlinewebfonts.com/t/efc2820473a48f510ce341184e5c2daf.woff2") format("woff2"), url("http://db.onlinewebfonts.com/t/efc2820473a48f510ce341184e5c2daf.woff") format("woff"), url("http://db.onlinewebfonts.com/t/efc2820473a48f510ce341184e5c2daf.ttf") format("truetype"), url("http://db.onlinewebfonts.com/t/efc2820473a48f510ce341184e5c2daf.svg#Proxima Nova") format("svg"); }
+@font-face {
+  font-family: "Proxima Nova Regular Italic";
+  src: url("http://db.onlinewebfonts.com/t/c8708c7ae9f1ccfd893ee01efdf0ac51.eot");
+  src: url("http://db.onlinewebfonts.com/t/c8708c7ae9f1ccfd893ee01efdf0ac51.eot?#iefix") format("embedded-opentype"), url("http://db.onlinewebfonts.com/t/c8708c7ae9f1ccfd893ee01efdf0ac51.woff2") format("woff2"), url("http://db.onlinewebfonts.com/t/c8708c7ae9f1ccfd893ee01efdf0ac51.woff") format("woff"), url("http://db.onlinewebfonts.com/t/c8708c7ae9f1ccfd893ee01efdf0ac51.ttf") format("truetype"), url("http://db.onlinewebfonts.com/t/c8708c7ae9f1ccfd893ee01efdf0ac51.svg#Proxima Nova") format("svg"); }
+@font-face {
+  font-family: "Proxima Nova ExtraBold Italic";
+  src: url("http://db.onlinewebfonts.com/t/1e378969cd70396aaadd59f9a7a5ab18.eot");
+  src: url("http://db.onlinewebfonts.com/t/1e378969cd70396aaadd59f9a7a5ab18.eot?#iefix") format("embedded-opentype"), url("http://db.onlinewebfonts.com/t/1e378969cd70396aaadd59f9a7a5ab18.woff2") format("woff2"), url("http://db.onlinewebfonts.com/t/1e378969cd70396aaadd59f9a7a5ab18.woff") format("woff"), url("http://db.onlinewebfonts.com/t/1e378969cd70396aaadd59f9a7a5ab18.ttf") format("truetype"), url("http://db.onlinewebfonts.com/t/1e378969cd70396aaadd59f9a7a5ab18.svg#Proxima Nova") format("svg"); }
+.Proxima-Nova-Light-Italic {
+  font-family: "Proxima Nova Light Italic"; }
+
+.Proxima-Nova-Regular-Italic {
+  font-family: "Proxima Nova Regular Italic"; }
+
+.Proxima-Nova-ExtraBold-Italic {
+  font-family: "Proxima Nova ExtraBold Italic"; }
+
+/**==========================================**
   MALT  FONTS CSS 
 **===========================================**/
 @font-face {
@@ -92,12 +116,11 @@ hr {
   overflow: hidden; }
 
 a {
-  color: #fff; }
-  a:hover, a:focus {
-    -webkit-transition: background-color 2s ease-out;
-    -moz-transition: background-color 2s ease-out;
-    -o-transition: background-color 2s ease-out;
-    transition: background-color 2s ease-out; }
+  outline: none;
+  color: #fff;
+  -webkit-transition: 0.6s ease-out;
+  -moz-transition: 0.6s ease-out;
+  transition: 0.6s ease-out; }
 
 a:focus, a:hover {
   color: #C8C8C8; }
@@ -409,15 +432,38 @@ select:hover {
 /**==========================================**
         MALT BACKGROUND COLOR AND FONT COLOR CSS 
 **===========================================**/
+.brown {
+  background: #9C883F;
+  background-color: #9C883F; }
+
+.black {
+  background: #000000; }
+
+.color-brown {
+  color: #9C883F; }
+
+.color-black {
+  color: #000; }
+
+.color-white {
+  color: #fff; }
+
+.brown-shade {
+  background: #75662f;
+  background-color: #75662f; }
+
+/**==========================================**
+        LITE BACKGROUND COLOR AND FONT COLOR CSS 
+**===========================================**/
 .green {
-  background: #6A9E00;
-  background-color: #6A9E00; }
+  background: #008A2D;
+  background-color: #008A2D; }
 
 .black {
   background: #000000; }
 
 .color-green {
-  color: #6A9E00; }
+  color: #008A2D; }
 
 .color-black {
   color: #000; }
@@ -426,11 +472,11 @@ select:hover {
   color: #fff; }
 
 .green-shade {
-  background: #537903;
-  background-color: #537903; }
+  background: #045e21;
+  background-color: #045e21; }
 
  /**==========================================**
-        LAGER BUTTON CSS 
+         BUTTON CSS 
 **===========================================**/
 .button {
   border-radius: 5px;
@@ -628,11 +674,13 @@ ul.social {
 .banner {
   height: 95vh; }
   .banner h1 {
-    padding: 20rem 0rem 3rem 3rem;
     margin: 0px;
     color: white;
     font-size: 5.4rem;
-    line-height: 4.5rem; }
+    line-height: 4.5rem;
+    position: absolute;
+    bottom: 40px;
+    left: 40px; }
 
 span[data-jarallax-element] {
   display: inline-block; }
@@ -663,7 +711,7 @@ span[data-jarallax-element] {
     background: #1E1E1E url(../assets/icon/loader.gif) center center no-repeat; }
   .wrapper-widget .widget-caption {
     padding: 5rem 0rem 0rem 3rem;
-    background: rgba(0, 0, 0, 0.48);
+    background: rgba(0, 0, 0, 0.3);
     height: 500px; }
     .wrapper-widget .widget-caption:hover, .wrapper-widget .widget-caption:focus {
       background: rgba(0, 0, 0, 0);
@@ -680,12 +728,23 @@ span[data-jarallax-element] {
       margin: 0px;
       padding: 0px; }
     .wrapper-widget .widget-caption span.play {
+      position: absolute;
+      right: 0px;
+      left: 0px;
+      top: 30%;
+      bottom: 50%;
       outline: none; }
       .wrapper-widget .widget-caption span.play .fab-6 {
         text-align: center;
-        margin-bottom: 20px; }
+        margin: 0 auto;
+        -webkit-transition: 0.6s ease-out;
+        -moz-transition: 0.6s ease-out;
+        transition: 0.6s ease-out; }
         .wrapper-widget .widget-caption span.play .fab-6:hover, .wrapper-widget .widget-caption span.play .fab-6:focus {
-          color: #FFE100; }
+          color: #83878D;
+          -webkit-transform: rotateZ(720deg);
+          -moz-transform: rotateZ(720deg);
+          transform: rotateZ(720deg); }
     .wrapper-widget .widget-caption .button {
       font-size: 22px;
       padding: .75em 1.5em;
@@ -1075,7 +1134,8 @@ body.loaded .revealer__layer:nth-child(3) {
   right: 0px;
   left: 0px;
   font-size: 5rem;
-  line-height: 4rem; }
+  line-height: 4rem;
+  padding-left: 10%; }
 .enquiry-form img {
   animation: scale 13s linear infinite; }
 
@@ -1102,13 +1162,26 @@ footer.callout {
   animation-iteration-count: infinite; }
 
   /**==========================================**
+        LITE OVERRIDE CSS 
+**===========================================**/
+.lite #loader-wrapper {
+  background-color: #008A2D; }
+.lite .button:hover, .lite .button:focus {
+  color: #045e21;
+  background-color: #045e21; }
+.lite .wrapper-widget .widget-caption span.play .fab-6:hover, .lite .wrapper-widget .widget-caption span.play .fab-6:focus {
+  color: #008A2D; }
+
+  /**==========================================**
         MALT OVERRIDE CSS 
 **===========================================**/
 .malt #loader-wrapper {
-  background-color: #6A9E00; }
+  background-color: #9C883F; }
 .malt .button:hover, .malt .button:focus {
-  color: #6A9E00;
-  background-color: #6A9E00; }
+  color: #9C883F;
+  background-color: #9C883F; }
+.malt .wrapper-widget .widget-caption span.play .fab-6:hover, .malt .wrapper-widget .widget-caption span.play .fab-6:focus {
+  color: #9C883F; }
 
   /**==========================================**
         LAGER OVERRIDE CSS 
@@ -1118,6 +1191,8 @@ footer.callout {
 .lager .button:hover, .lager .button:focus {
   color: #FFE100;
   background-color: #FFE100; }
+.lager .wrapper-widget .widget-caption span.play .fab-6:hover, .lager .wrapper-widget .widget-caption span.play .fab-6:focus {
+  color: #FFE100; }
 
   /**==========================================**
        MOBILE HEADER CSS
@@ -1217,7 +1292,6 @@ header.callout {
       height: 360px;
       min-height: 360px; }
     .banner h1 {
-      padding: 10rem 0rem 0rem 1rem;
       font-size: 1.4rem;
       text-align: left;
       line-height: normal; }
