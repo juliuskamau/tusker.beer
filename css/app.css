@@ -1,4 +1,14 @@
 /**==========================================**
+  CIDER  FONTS CSS 
+**===========================================**/
+@font-face {
+  font-family: "Proxima Nova Black";
+  src: url("http://db.onlinewebfonts.com/t/aa46d234cf405126cdd1c36600e4b978.eot");
+  src: url("http://db.onlinewebfonts.com/t/aa46d234cf405126cdd1c36600e4b978.eot?#iefix") format("embedded-opentype"), url("http://db.onlinewebfonts.com/t/aa46d234cf405126cdd1c36600e4b978.woff2") format("woff2"), url("http://db.onlinewebfonts.com/t/aa46d234cf405126cdd1c36600e4b978.woff") format("woff"), url("http://db.onlinewebfonts.com/t/aa46d234cf405126cdd1c36600e4b978.ttf") format("truetype"), url("http://db.onlinewebfonts.com/t/aa46d234cf405126cdd1c36600e4b978.svg#Proxima Nova") format("svg"); }
+.Proxima-Nova-Black {
+  font-family: "Proxima Nova Black"; }
+
+/**==========================================**
   LITE  FONTS CSS 
 **===========================================**/
 @font-face {
@@ -82,6 +92,9 @@ hr {
 .inline li {
   display: inline; }
 
+ul {
+  padding-left: 0px; }
+
 .list-style-none li {
   list-style: none; }
 
@@ -116,6 +129,7 @@ hr {
   overflow: hidden; }
 
 a {
+  text-decoration: none;
   outline: none;
   color: #fff;
   -webkit-transition: 0.6s ease-out;
@@ -475,9 +489,41 @@ select:hover {
   background: #045e21;
   background-color: #045e21; }
 
+/**==========================================**
+        CIDER BACKGROUND COLOR AND FONT COLOR CSS 
+**===========================================**/
+.red {
+  background: #BD2E2B;
+  background-color: #BD2E2B; }
+
+.black {
+  background: #000000; }
+
+.color-red {
+  color: #BD2E2B; }
+
+.color-black {
+  color: #000; }
+
+.color-white {
+  color: #fff; }
+
+.red-shade {
+  background: #8d2220;
+  background-color: #8d2220; }
+
  /**==========================================**
          BUTTON CSS 
 **===========================================**/
+.close-button, .close-button.medium {
+  right: 1rem;
+  top: .5rem;
+  font-size: 2em;
+  line-height: 1;
+  position: absolute;
+  color: #8a8a8a;
+  cursor: pointer; }
+
 .button {
   border-radius: 5px;
   position: relative;
@@ -547,7 +593,7 @@ select:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #FFE100;
+    background: #cbc9c5;
     /*background: rgba(255, 255, 255, 0.5);*/
     content: '';
     -webkit-transition: -webkit-transform 0.6s;
@@ -759,7 +805,11 @@ span[data-jarallax-element] {
   height: 350px;
   min-height: 350px; }
 .wrapper-widget.video-inner span.play {
-  padding: 5%; }
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  bottom: inherit; }
   .wrapper-widget.video-inner span.play .fab-6 {
     margin: 0px; }
 .wrapper-widget.video-inner .large-4.cell:nth-child(1), .wrapper-widget.video-inner .large-4.cell:nth-child(2) {
@@ -771,9 +821,12 @@ span[data-jarallax-element] {
   line-height: 3rem; }
 
 .banner-top-inner img {
-  width: 205px;
-  max-width: 100%;
-  height: auto; }
+  /* width: 205px;
+   max-width: 100%;
+   height: auto;*/ }
+.banner-top-inner .image-loader {
+  background: #fff url(../assets/icon/loader.gif) center center no-repeat;
+  height: 100%; }
 .banner-top-inner h1 {
   line-height: 6rem;
   font-size: 116px; }
@@ -1027,102 +1080,57 @@ body.loaded .revealer__layer:nth-child(3) {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1500; }
+  z-index: 1000;
+  background-color: #F2F2F2; }
+  #loader-wrapper #loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 3px solid transparent;
+    border-top-color: #373D3F;
+    border-radius: 50%;
+    animation: loader 2s linear infinite; }
+    #loader-wrapper #loader:before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      right: 5px;
+      bottom: 5px;
+      border: 3px solid transparent;
+      border-top-color: #373D3F;
+      border-radius: 50%;
+      animation: loader 3s linear infinite; }
+    #loader-wrapper #loader:after {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      right: 15px;
+      bottom: 15px;
+      border: 3px solid transparent;
+      border-top-color: #373D3F;
+      border-radius: 50%;
+      animation: loader 1.5s linear infinite; }
+    #loader-wrapper #loader img {
+      max-width: 100%;
+      width: 60px;
+      height: auto;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      bottom: inherit; }
 
-.load {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  width: 130px;
-  height: 170px;
-  color: #fff;
-  -webkit-animation-name: fadeInUp;
-  -webkit-animation-duration: 1s;
-  animation-name: fadeInUp;
-  animation-duration: 1s; }
-
-.load img {
-  margin: 0 auto; }
-
-.snake {
-  border-radius: 100%;
-  position: relative;
-  margin: 0 auto;
-  -webkit-animation-name: fadeInUp;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  -webkit-animation-delay: 0.5s;
-  animation-name: fadeInUp;
-  animation-duration: 1s;
-  animation-fill-mode: both;
-  animation-delay: 0.5s;
-  top: 15px; }
-
-.snake span {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background: #fff;
-  opacity: .5;
-  -webkit-border-radius: 20px;
-  border-radius: 20px;
-  -webkit-animation: snake 1s infinite ease-in-out;
-  animation: snake 1s infinite ease-in-out; }
-
-.snake span:nth-child(2) {
-  left: 20px;
-  -webkit-animation-delay: .2s;
-  animation-delay: .2s; }
-
-.snake span:nth-child(3) {
-  left: 40px;
-  -webkit-animation-delay: .4s;
-  animation-delay: .4s; }
-
-.snake span:nth-child(4) {
-  left: 60px;
-  -webkit-animation-delay: .6s;
-  animation-delay: .6s; }
-
-.snake span:nth-child(5) {
-  left: 80px;
-  -webkit-animation-delay: .8s;
-  animation-delay: .8s; }
-
-@-webkit-keyframes snake {
+@keyframes loader {
   0% {
-    opacity: .3;
-    -webkit-transform: translateY(0px); }
-  50% {
-    opacity: 1;
-    -webkit-transform: translateY(-10px);
-    background: #fff; }
+    transform: rotate(0deg); }
   100% {
-    opacity: .3;
-    -webkit-transform: translateY(0px); } }
-@keyframes snake {
-  0% {
-    opacity: .8;
-    transform: translateY(0px); }
-  50% {
-    opacity: 1;
-    transform: translateY(-10px);
-    background: #fff; }
-  100% {
-    opacity: .8;
-    transform: translateY(0px); } }
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0); }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
+    transform: rotate(360deg); } }
 /**==========================================**
         FORM CSS 
 **===========================================**/
@@ -1162,6 +1170,19 @@ footer.callout {
   animation-iteration-count: infinite; }
 
   /**==========================================**
+        CIDER OVERRIDE CSS 
+**===========================================**/
+.cider #loader-wrapper {
+  background-color: #BD2E2B; }
+.cider .button:hover, .cider .button:focus {
+  color: #BD2E2B;
+  background-color: #BD2E2B; }
+.cider .wrapper-widget .widget-caption span.play .fab-6:hover, .cider .wrapper-widget .widget-caption span.play .fab-6:focus {
+  color: #BD2E2B; }
+.cider figcaption::before {
+  background: #BD2E2B; }
+
+  /**==========================================**
         LITE OVERRIDE CSS 
 **===========================================**/
 .lite #loader-wrapper {
@@ -1171,6 +1192,8 @@ footer.callout {
   background-color: #045e21; }
 .lite .wrapper-widget .widget-caption span.play .fab-6:hover, .lite .wrapper-widget .widget-caption span.play .fab-6:focus {
   color: #008A2D; }
+.lite figcaption::before {
+  background: #008A2D; }
 
   /**==========================================**
         MALT OVERRIDE CSS 
@@ -1182,6 +1205,10 @@ footer.callout {
   background-color: #9C883F; }
 .malt .wrapper-widget .widget-caption span.play .fab-6:hover, .malt .wrapper-widget .widget-caption span.play .fab-6:focus {
   color: #9C883F; }
+.malt figcaption::before {
+  background: #9C883F; }
+.malt ul.nav li a {
+  font-size: 13px; }
 
   /**==========================================**
         LAGER OVERRIDE CSS 
@@ -1193,6 +1220,8 @@ footer.callout {
   background-color: #FFE100; }
 .lager .wrapper-widget .widget-caption span.play .fab-6:hover, .lager .wrapper-widget .widget-caption span.play .fab-6:focus {
   color: #FFE100; }
+.lager figcaption::before {
+  background: #FFE100; }
 
   /**==========================================**
        MOBILE HEADER CSS
@@ -1217,7 +1246,8 @@ header.callout {
     margin: 0px; }
 
 .off-canvas {
-  border: none; }
+  border: none;
+  position: fixed; }
   .off-canvas img.logo {
     max-width: 100vw;
     height: auto;
@@ -1243,7 +1273,8 @@ header.callout {
   .enquiry-form {
     margin-top: 52px; }
     .enquiry-form h1 {
-      font-size: 1.4rem; }
+      font-size: 1.4rem;
+      line-height: normal; }
     .enquiry-form .content {
       height: auto;
       margin-top: 20px; }
@@ -1344,10 +1375,11 @@ header.callout {
   #age-gate .large-12.small-12.column {
     width: 100%; }
   #age-gate label {
+    margin-bottom: 0px; }
+
+  .inner-title {
+    margin-top: 60px;
     margin-bottom: 0px; } }
 /*iPad in portrait & landscape  hack*/
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  .side-bar {
-    width: 30%; } }
 
 /*# sourceMappingURL=app.css.map */

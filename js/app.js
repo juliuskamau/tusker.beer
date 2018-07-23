@@ -56,7 +56,6 @@ $(window).ready(function() {
         reveal();
     }
     $("body").addClass("loaded");
-
 });
 
 
