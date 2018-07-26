@@ -711,7 +711,8 @@ ul.social {
   background: none; }
 
 .video-loader {
-  background: #1E1E1E url(../assets/icon/loader.gif) center center no-repea; }
+  background: #1E1E1E url(../assets/icon/loader.gif) center center no-repeat;
+  width: 100%; }
 
 .image-loader {
   background: #1E1E1E url(../assets/icon/loader.gif) center center no-repeat;
@@ -725,8 +726,8 @@ ul.social {
     font-size: 5.4rem;
     line-height: 4.5rem;
     position: absolute;
-    bottom: 40px;
-    left: 40px; }
+    bottom: 60px;
+    left: 60px; }
 
 span[data-jarallax-element] {
   display: inline-block; }
@@ -880,6 +881,8 @@ span[data-jarallax-element] {
   background: #FFE100 url(../assets/icon/loader.gif) center center no-repeat;
   z-index: 1004;
   cursor: wait; }
+  #age-gate .button {
+    background-color: #373D3F; }
   #age-gate .logo {
     margin-top: 30px; }
   #age-gate .error_age_text {
@@ -893,7 +896,7 @@ span[data-jarallax-element] {
     text-align: center;
     color: #fff;
     margin: 0 auto;
-    padding: 3.25em 2.25em;
+    padding: 1em 2.25em;
     width: 100%;
     right: 0px;
     left: 0px;
@@ -931,8 +934,8 @@ span[data-jarallax-element] {
     border-bottom-left-radius: 3px;
     border-top-left-radius: 3px;
     text-align: center;
-    height: 2.4375rem;
-    line-height: 2.4375rem;
+    height: 3rem;
+    line-height: 3rem;
     background: #FFE100;
     color: #fff;
     border-color: #FFE100;
@@ -949,7 +952,7 @@ span[data-jarallax-element] {
   #age-gate .large-4 select {
     border-radius: 3px; }
   #age-gate .button {
-    margin: 1.25rem 0px 1.25rem 0px;
+    margin: 0rem 0px 1.25rem 0px;
     padding: .85em 5em; }
 
 .pattern {
@@ -1091,7 +1094,7 @@ body.loaded .revealer__layer:nth-child(3) {
     height: 150px;
     margin: -75px 0 0 -75px;
     border: 3px solid transparent;
-    border-top-color: #373D3F;
+    border-top-color: #fff;
     border-radius: 50%;
     animation: loader 2s linear infinite; }
     #loader-wrapper #loader:before {
@@ -1102,7 +1105,7 @@ body.loaded .revealer__layer:nth-child(3) {
       right: 5px;
       bottom: 5px;
       border: 3px solid transparent;
-      border-top-color: #373D3F;
+      border-top-color: #000000;
       border-radius: 50%;
       animation: loader 3s linear infinite; }
     #loader-wrapper #loader:after {
@@ -1113,7 +1116,7 @@ body.loaded .revealer__layer:nth-child(3) {
       right: 15px;
       bottom: 15px;
       border: 3px solid transparent;
-      border-top-color: #373D3F;
+      border-top-color: #fff;
       border-radius: 50%;
       animation: loader 1.5s linear infinite; }
     #loader-wrapper #loader img {
@@ -1358,7 +1361,7 @@ header.callout {
     margin: 0 auto; }
 
   #age-gate .button {
-    margin: 1rem 0px 1rem 0px; }
+    margin: 0rem 0px 1rem 0px; }
   #age-gate > div {
     padding: 10px; }
   #age-gate .logo {

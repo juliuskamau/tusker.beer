@@ -309,6 +309,7 @@ select:hover{background: #fff url(../assets/icon/select-arrow.png) no-repeat 100
     cursor: pointer;
 }
   .button {
+    
     border-radius: 5px;
     position: relative;
     z-index: 1;
@@ -537,7 +538,8 @@ padding: 0px;
 }
 
 .video-loader{
-    background: #1E1E1E url(../assets/icon/loader.gif) center center no-repea
+    background: #1E1E1E url(../assets/icon/loader.gif) center center no-repeat;
+    width: 100%;
   
 }
 .image-loader{
@@ -552,8 +554,8 @@ padding: 0px;
         font-size: 5.4rem;
         line-height: 4.5rem;
         position: absolute;
-        bottom: 40px;
-        left: 40px;
+        bottom: 60px;
+        left: 60px;
     }
 }
 span[data-jarallax-element] {
@@ -761,6 +763,9 @@ span[data-jarallax-element] {
     background: #FFE100 url(../assets/icon/loader.gif) center center no-repeat;
     z-index: 1004;
     cursor: wait;
+    .button{
+        background-color: #373D3F; 
+    }
     .logo{
 
         margin-top: 30px;
@@ -780,7 +785,7 @@ span[data-jarallax-element] {
       text-align: center;
       color: #fff;
       margin: 0 auto;
-      padding: 3.25em 2.25em;
+      padding: 1em 2.25em;
       width:100%;
       right: 0px;
       left: 0px;
@@ -828,8 +833,8 @@ span[data-jarallax-element] {
       border-bottom-left-radius: 3px;
       border-top-left-radius: 3px;
       text-align: center;
-      height: 2.4375rem;
-      line-height: 2.4375rem;
+      height: 3rem;
+      line-height: 3rem;
       background: #FFE100;
       color: #fff;
       border-color: #FFE100;
@@ -852,7 +857,7 @@ span[data-jarallax-element] {
     }
 
     .button{
-      margin: 1.25rem 0px 1.25rem 0px;
+      margin: 0rem 0px 1.25rem 0px;
       padding:.85em 5em;
     }
 
@@ -1002,7 +1007,7 @@ span[data-jarallax-element] {
         height: 150px;
         margin: -75px 0 0 -75px;
         border: 3px solid transparent;
-        border-top-color: #373D3F;
+        border-top-color: #fff;
         border-radius: 50%;
         animation: loader 2s linear infinite;
         &:before{
@@ -1013,7 +1018,7 @@ span[data-jarallax-element] {
             right: 5px;
             bottom: 5px;
             border: 3px solid transparent;
-            border-top-color: #373D3F;
+            border-top-color: #000000;
             border-radius: 50%;
             animation: loader 3s linear infinite;
           }
@@ -1026,7 +1031,7 @@ span[data-jarallax-element] {
             right: 15px;
             bottom: 15px;
             border: 3px solid transparent;
-            border-top-color: #373D3F;
+            border-top-color: #fff;
             border-radius: 50%;
             animation: loader 1.5s linear infinite;
           }
@@ -1446,7 +1451,7 @@ display: none;
 
     #age-gate {
         .button{
-            margin: 1rem 0px 1rem 0px;
+            margin: 0rem 0px 1rem 0px;
         }
         > div{
             padding: 10px;
