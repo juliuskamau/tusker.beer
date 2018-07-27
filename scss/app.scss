@@ -137,8 +137,9 @@
  .bullets-none{ list-style: none;}
  .background-transparent{background: transparent !important;}
  .border-black{border: 1px solid #000;}
- .border-white{border: 1px solid #fff;
-}
+ .border-white{border: 1px solid #fff;}
+ .fixed{position: fixed;}
+ .callout{border-radius: 0px;}
  /**==========================================**
          COMMON PADDING CSS 
   **===========================================**/
@@ -263,6 +264,7 @@ select:hover{background: #fff url(../assets/icon/select-arrow.png) no-repeat 100
 .color-white{color: #fff;}
 .color-yellow-shade{color:#fdd009}
 .yellow-shade{background: #e3bd11;background-color: #e3bd11;}
+.black{color:#000}
 
 /**==========================================**
         MALT BACKGROUND COLOR AND FONT COLOR CSS 
@@ -418,20 +420,17 @@ figcaption{
 **===========================================**/
 
 ul.nav{
-    margin-left: auto;
-    margin-right: auto;
     padding: 0px;
-    margin-top: 2rem;
-    margin-bottom: 5rem;
+    margin: 0px 0px 20px 0px;
     .drop-menu{
-        margin: 0px;
         animation: fadeInUp 1s;
+        background: #000000b3;
         li{
     padding: 0px;
     margin: 0px;
     line-height: normal;
     a{
-        font-size: 12px;
+        font-size: 14px;
         color: #fff;
     }
         }
@@ -440,11 +439,23 @@ ul.nav{
       }
         li{
             list-style: none;
+            &:last-child{
+a{
+    border-bottom: solid rgba(255, 255, 255, 0.56) 1px;
+}
+            }
             a{
-                /*color:#000;*/
+                background-image: linear-gradient(to right, rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.28) 50%, transparent 50%, transparent);
+                background-position: 100% 0;
+                background-size: 200% 100%;
+                padding: 15px 0px 15px 0px;
+                display: block;
+                border-top: solid rgba(255, 255, 255, 0.56) 1px;
                 text-transform: uppercase;
-               /* font-family: "Chivo Black";*/
                 font-size: 14px;
+                &:hover{
+                    background-position: 0 0;
+                }
                 .fa-angle-down{
                     margin-left: 10px;
                     margin-right: 10px;
@@ -484,12 +495,16 @@ padding: 0px;
     bottom: 0;
     right: 0px;
     z-index: 99;
+    overflow-y: auto;
     img.logo{
-        margin-top: 30px;
+        margin-top: 15px;
+        max-width: 100%;
+        width: 100px;
+        height: auto;
     }
     .button.button-rounded{
         width: 170px;
-        margin: 1.5rem auto;
+        margin: 20px auto;
     }
 }
 
@@ -549,13 +564,13 @@ padding: 0px;
 .banner{
     height: 95vh;
     h1{
-        margin: 0px;
         color: white;
         font-size: 5.4rem;
         line-height: 4.5rem;
         position: absolute;
         bottom: 60px;
         left: 60px;
+        margin: 0px;
     }
 }
 span[data-jarallax-element] {
@@ -1066,10 +1081,15 @@ span[data-jarallax-element] {
         FORM CSS 
 **===========================================**/
 .enquiry-form{
+    img{
+height: 97vh;
+    }
     .content{
         overflow-y: auto;
         height:95vh;
-
+p{
+    margin-top: 0px;
+}
     }
     h1{
         bottom: 30px;
@@ -1084,6 +1104,9 @@ span[data-jarallax-element] {
         animation: scale 13s linear infinite; 
       }      
 }
+
+
+
 /**==========================================**
         FOOTER CSS 
 **===========================================**/
@@ -1147,6 +1170,12 @@ figcaption{
         background: #BD2E2B; 
     }
 }
+
+.top-button{
+    background: #BD2E2B;
+    background-color: #BD2E2B;
+    color: #fff;
+}
 }
 
 
@@ -1182,6 +1211,11 @@ figcaption{
     &::before{
         background: #008A2D; 
     }
+}
+.top-button{
+    background: #008A2D;
+    background-color: #008A2D;
+    color: #fff;
 }
 }
 
@@ -1223,7 +1257,11 @@ figcaption{
 ul.nav li a{
     font-size: 13px;
 }
-
+.top-button{
+    background: #9C883F;
+    background-color: #9C883F;
+    color: #fff;
+}
 }
 
   /**==========================================**
@@ -1257,11 +1295,40 @@ figcaption{
         background: #FFE100; 
     }
 }
+.top-button{
+    background: #FFE100;
+    background-color: #FFE100;
+    color: #fff;
+}
 }
 
   /**==========================================**
        MOBILE HEADER CSS
 **===========================================**/
+.top-button{
+    width: 200px;
+    position: fixed;
+    right: 0px;
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform:rotate(90deg); 
+    transform: rotate(90deg);
+    top: 50%;
+    height: 45px;
+    margin: 0px;
+    float: right;
+    margin-right: -78px;
+    z-index: 9;
+    font-size: 18px;
+    padding: 0.75em 1em;
+    .fa-shopping-cart{
+        margin-left: 10px;
+        transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -webkit-transform:rotate(-90deg); 
+        transform: rotate(-90deg);
+    }
+}
 header.callout{
     border: none;
     display: none;
@@ -1322,12 +1389,42 @@ figure.panel.effect_overlay{
 }
 }
 
+
+/**==========================================**
+        ACCORDION CSS 
+**===========================================**/
+
+.accordion{
+    .accordion-title.button{
+        font-size: 20px;
+        &:hover,&:focus{
+            color: #fff;
+        }
+
+        &::before,&::after{
+            font-size: 30px;
+            margin-top: -0.8rem;
+        }
+    }
+}
   /**==========================================**
         MEDIA QUESRIES CSS
 **===========================================**/
 @media only screen and (max-width: 1100px){
+    ul.nav {
+        li a{
+        background-image:none;
+        }
+       li &:last-child {
+            background-image:none;
+        }
+        }
+    
     .enquiry-form {
         margin-top: 52px;
+        img{
+            height:auto;
+                }
         h1{
             font-size: 1.4rem;
             line-height: normal;

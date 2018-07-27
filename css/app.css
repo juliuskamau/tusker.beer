@@ -171,6 +171,12 @@ a:focus, a:hover {
 .border-white {
   border: 1px solid #fff; }
 
+.fixed {
+  position: fixed; }
+
+.callout {
+  border-radius: 0px; }
+
 /**==========================================**
         COMMON PADDING CSS 
  **===========================================**/
@@ -443,6 +449,9 @@ select:hover {
   background: #e3bd11;
   background-color: #e3bd11; }
 
+.black {
+  color: #000; }
+
 /**==========================================**
         MALT BACKGROUND COLOR AND FONT COLOR CSS 
 **===========================================**/
@@ -614,28 +623,33 @@ select:hover {
         SOCIAL CSS 
 **===========================================**/
 ul.nav {
-  margin-left: auto;
-  margin-right: auto;
   padding: 0px;
-  margin-top: 2rem;
-  margin-bottom: 5rem; }
+  margin: 0px 0px 20px 0px; }
   ul.nav .drop-menu {
-    margin: 0px;
-    animation: fadeInUp 1s; }
+    animation: fadeInUp 1s;
+    background: #000000b3; }
     ul.nav .drop-menu li {
       padding: 0px;
       margin: 0px;
       line-height: normal; }
       ul.nav .drop-menu li a {
-        font-size: 12px;
+        font-size: 14px;
         color: #fff; }
   ul.nav li {
     list-style: none; }
+    ul.nav li:last-child a {
+      border-bottom: solid rgba(255, 255, 255, 0.56) 1px; }
     ul.nav li a {
-      /*color:#000;*/
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.28) 50%, transparent 50%, transparent);
+      background-position: 100% 0;
+      background-size: 200% 100%;
+      padding: 15px 0px 15px 0px;
+      display: block;
+      border-top: solid rgba(255, 255, 255, 0.56) 1px;
       text-transform: uppercase;
-      /* font-family: "Chivo Black";*/
       font-size: 14px; }
+      ul.nav li a:hover {
+        background-position: 0 0; }
       ul.nav li a .fa-angle-down {
         margin-left: 10px;
         margin-right: 10px; }
@@ -665,12 +679,16 @@ ul.social {
   left: 0;
   bottom: 0;
   right: 0px;
-  z-index: 99; }
+  z-index: 99;
+  overflow-y: auto; }
   .side-bar img.logo {
-    margin-top: 30px; }
+    margin-top: 15px;
+    max-width: 100%;
+    width: 100px;
+    height: auto; }
   .side-bar .button.button-rounded {
     width: 170px;
-    margin: 1.5rem auto; }
+    margin: 20px auto; }
 
  /**==========================================**
         BANNER CSS 
@@ -721,13 +739,13 @@ ul.social {
 .banner {
   height: 95vh; }
   .banner h1 {
-    margin: 0px;
     color: white;
     font-size: 5.4rem;
     line-height: 4.5rem;
     position: absolute;
     bottom: 60px;
-    left: 60px; }
+    left: 60px;
+    margin: 0px; }
 
 span[data-jarallax-element] {
   display: inline-block; }
@@ -1137,9 +1155,13 @@ body.loaded .revealer__layer:nth-child(3) {
 /**==========================================**
         FORM CSS 
 **===========================================**/
+.enquiry-form img {
+  height: 97vh; }
 .enquiry-form .content {
   overflow-y: auto;
   height: 95vh; }
+  .enquiry-form .content p {
+    margin-top: 0px; }
 .enquiry-form h1 {
   bottom: 30px;
   right: 0px;
@@ -1184,6 +1206,10 @@ footer.callout {
   color: #BD2E2B; }
 .cider figcaption::before {
   background: #BD2E2B; }
+.cider .top-button {
+  background: #BD2E2B;
+  background-color: #BD2E2B;
+  color: #fff; }
 
   /**==========================================**
         LITE OVERRIDE CSS 
@@ -1197,6 +1223,10 @@ footer.callout {
   color: #008A2D; }
 .lite figcaption::before {
   background: #008A2D; }
+.lite .top-button {
+  background: #008A2D;
+  background-color: #008A2D;
+  color: #fff; }
 
   /**==========================================**
         MALT OVERRIDE CSS 
@@ -1212,6 +1242,10 @@ footer.callout {
   background: #9C883F; }
 .malt ul.nav li a {
   font-size: 13px; }
+.malt .top-button {
+  background: #9C883F;
+  background-color: #9C883F;
+  color: #fff; }
 
   /**==========================================**
         LAGER OVERRIDE CSS 
@@ -1225,10 +1259,37 @@ footer.callout {
   color: #FFE100; }
 .lager figcaption::before {
   background: #FFE100; }
+.lager .top-button {
+  background: #FFE100;
+  background-color: #FFE100;
+  color: #fff; }
 
   /**==========================================**
        MOBILE HEADER CSS
 **===========================================**/
+.top-button {
+  width: 200px;
+  position: fixed;
+  right: 0px;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  top: 50%;
+  height: 45px;
+  margin: 0px;
+  float: right;
+  margin-right: -78px;
+  z-index: 9;
+  font-size: 18px;
+  padding: 0.75em 1em; }
+  .top-button .fa-shopping-cart {
+    margin-left: 10px;
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg); }
+
 header.callout {
   border: none;
   display: none;
@@ -1269,12 +1330,30 @@ header.callout {
 .logos .large-3.medium-3.small-12.cell {
   padding-bottom: 1.4rem; }
 
+/**==========================================**
+        ACCORDION CSS 
+**===========================================**/
+.accordion .accordion-title.button {
+  font-size: 20px; }
+  .accordion .accordion-title.button:hover, .accordion .accordion-title.button:focus {
+    color: #fff; }
+  .accordion .accordion-title.button::before, .accordion .accordion-title.button::after {
+    font-size: 30px;
+    margin-top: -0.8rem; }
+
   /**==========================================**
         MEDIA QUESRIES CSS
 **===========================================**/
 @media only screen and (max-width: 1100px) {
+  ul.nav li a {
+    background-image: none; }
+  li ul.nav:last-child {
+    background-image: none; }
+
   .enquiry-form {
     margin-top: 52px; }
+    .enquiry-form img {
+      height: auto; }
     .enquiry-form h1 {
       font-size: 1.4rem;
       line-height: normal; }
