@@ -662,6 +662,13 @@ ul.social {
       transform: rotateZ(720deg); }
 
  /**==========================================**
+        TEXT PAGE CSS 
+**===========================================
+**/
+.text_page a {
+  color: #FFE100; }
+
+ /**==========================================**
         BANNER CSS 
 **===========================================
 **/
@@ -1127,7 +1134,7 @@ footer.callout {
       color: #FFE100; }
   footer.callout p {
     color: white;
-    font-size: 11px;
+    font-size: 12px;
     margin: 15px 0px 0px 0px; }
 
 /*animation*/
