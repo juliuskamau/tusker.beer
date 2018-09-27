@@ -1,65 +1,4 @@
 /**==========================================**
-  CIDER  FONTS CSS 
-**===========================================**/
-@font-face {
-  font-family: "Proxima Nova Black";
-  src: url("http://db.onlinewebfonts.com/t/aa46d234cf405126cdd1c36600e4b978.eot");
-  src: url("http://db.onlinewebfonts.com/t/aa46d234cf405126cdd1c36600e4b978.eot?#iefix") format("embedded-opentype"), url("http://db.onlinewebfonts.com/t/aa46d234cf405126cdd1c36600e4b978.woff2") format("woff2"), url("http://db.onlinewebfonts.com/t/aa46d234cf405126cdd1c36600e4b978.woff") format("woff"), url("http://db.onlinewebfonts.com/t/aa46d234cf405126cdd1c36600e4b978.ttf") format("truetype"), url("http://db.onlinewebfonts.com/t/aa46d234cf405126cdd1c36600e4b978.svg#Proxima Nova") format("svg"); }
-.Proxima-Nova-Black {
-  font-family: "Proxima Nova Black"; }
-
-/**==========================================**
-  LITE  FONTS CSS 
-**===========================================**/
-@font-face {
-  font-family: "Proxima Nova Light Italic";
-  src: url("http://db.onlinewebfonts.com/t/efc2820473a48f510ce341184e5c2daf.eot");
-  src: url("http://db.onlinewebfonts.com/t/efc2820473a48f510ce341184e5c2daf.eot?#iefix") format("embedded-opentype"), url("http://db.onlinewebfonts.com/t/efc2820473a48f510ce341184e5c2daf.woff2") format("woff2"), url("http://db.onlinewebfonts.com/t/efc2820473a48f510ce341184e5c2daf.woff") format("woff"), url("http://db.onlinewebfonts.com/t/efc2820473a48f510ce341184e5c2daf.ttf") format("truetype"), url("http://db.onlinewebfonts.com/t/efc2820473a48f510ce341184e5c2daf.svg#Proxima Nova") format("svg"); }
-@font-face {
-  font-family: "Proxima Nova Regular Italic";
-  src: url("http://db.onlinewebfonts.com/t/c8708c7ae9f1ccfd893ee01efdf0ac51.eot");
-  src: url("http://db.onlinewebfonts.com/t/c8708c7ae9f1ccfd893ee01efdf0ac51.eot?#iefix") format("embedded-opentype"), url("http://db.onlinewebfonts.com/t/c8708c7ae9f1ccfd893ee01efdf0ac51.woff2") format("woff2"), url("http://db.onlinewebfonts.com/t/c8708c7ae9f1ccfd893ee01efdf0ac51.woff") format("woff"), url("http://db.onlinewebfonts.com/t/c8708c7ae9f1ccfd893ee01efdf0ac51.ttf") format("truetype"), url("http://db.onlinewebfonts.com/t/c8708c7ae9f1ccfd893ee01efdf0ac51.svg#Proxima Nova") format("svg"); }
-@font-face {
-  font-family: "Proxima Nova ExtraBold Italic";
-  src: url("http://db.onlinewebfonts.com/t/1e378969cd70396aaadd59f9a7a5ab18.eot");
-  src: url("http://db.onlinewebfonts.com/t/1e378969cd70396aaadd59f9a7a5ab18.eot?#iefix") format("embedded-opentype"), url("http://db.onlinewebfonts.com/t/1e378969cd70396aaadd59f9a7a5ab18.woff2") format("woff2"), url("http://db.onlinewebfonts.com/t/1e378969cd70396aaadd59f9a7a5ab18.woff") format("woff"), url("http://db.onlinewebfonts.com/t/1e378969cd70396aaadd59f9a7a5ab18.ttf") format("truetype"), url("http://db.onlinewebfonts.com/t/1e378969cd70396aaadd59f9a7a5ab18.svg#Proxima Nova") format("svg"); }
-.Proxima-Nova-Light-Italic {
-  font-family: "Proxima Nova Light Italic"; }
-
-.Proxima-Nova-Regular-Italic {
-  font-family: "Proxima Nova Regular Italic"; }
-
-.Proxima-Nova-ExtraBold-Italic {
-  font-family: "Proxima Nova ExtraBold Italic"; }
-
-/**==========================================**
-  MALT  FONTS CSS 
-**===========================================**/
-@font-face {
-  font-family: "Copperplate Bold";
-  src: url("http://db.onlinewebfonts.com/t/423c5077bf2221d0f77f1fb9cb97d92d.eot");
-  src: url("http://db.onlinewebfonts.com/t/423c5077bf2221d0f77f1fb9cb97d92d.eot?#iefix") format("embedded-opentype"), url("http://db.onlinewebfonts.com/t/423c5077bf2221d0f77f1fb9cb97d92d.woff2") format("woff2"), url("http://db.onlinewebfonts.com/t/423c5077bf2221d0f77f1fb9cb97d92d.woff") format("woff"), url("http://db.onlinewebfonts.com/t/423c5077bf2221d0f77f1fb9cb97d92d.ttf") format("truetype"), url("http://db.onlinewebfonts.com/t/423c5077bf2221d0f77f1fb9cb97d92d.svg#Copperplate") format("svg"); }
-.Copperplate-Bold {
-  font-family: "Copperplate Bold"; }
-
-/**==========================================**
-  LAGER  FONTS CSS 
-**===========================================**/
-@font-face {
-  font-family: "Chivo Black";
-  src: url("http://db.onlinewebfonts.com/t/cbc42562de982b91847cdf42d93e0c1a.eot");
-  src: url("http://db.onlinewebfonts.com/t/cbc42562de982b91847cdf42d93e0c1a.eot?#iefix") format("embedded-opentype"), url("http://db.onlinewebfonts.com/t/cbc42562de982b91847cdf42d93e0c1a.woff2") format("woff2"), url("http://db.onlinewebfonts.com/t/cbc42562de982b91847cdf42d93e0c1a.woff") format("woff"), url("http://db.onlinewebfonts.com/t/cbc42562de982b91847cdf42d93e0c1a.ttf") format("truetype"), url("http://db.onlinewebfonts.com/t/cbc42562de982b91847cdf42d93e0c1a.svg#Chivo") format("svg"); }
-@font-face {
-  font-family: "Chivo Regular";
-  src: url("http://db.onlinewebfonts.com/t/8237ffd368a85f9ee9886d2d8b79c68b.eot");
-  src: url("//db.onlinewebfonts.com/t/8237ffd368a85f9ee9886d2d8b79c68b.eot?#iefix") format("embedded-opentype"), url("http://db.onlinewebfonts.com/t/8237ffd368a85f9ee9886d2d8b79c68b.woff2") format("woff2"), url("http://db.onlinewebfonts.com/t/8237ffd368a85f9ee9886d2d8b79c68b.woff") format("woff"), url("http://db.onlinewebfonts.com/t/8237ffd368a85f9ee9886d2d8b79c68b.ttf") format("truetype"), url("http://db.onlinewebfonts.com/t/8237ffd368a85f9ee9886d2d8b79c68b.svg#Chivo") format("svg"); }
-.Chivo-Black {
-  font-family: "Chivo Black"; }
-
-.Chivo-Regular {
-  font-family: "Chivo Regular"; }
-
-/**==========================================**
         COMMON CSS 
  **===========================================**/
 body, html {
@@ -687,8 +626,10 @@ ul.social {
     width: 100px;
     height: auto; }
   .side-bar .button.button-rounded {
-    width: 170px;
-    margin: 20px auto; }
+    width: 200px;
+    margin: 20px auto;
+    font-size: 13px;
+    padding: 1.2em 1em; }
 
  /**==========================================**
         BANNER CSS 
@@ -740,7 +681,7 @@ ul.social {
   height: 95vh; }
   .banner h1 {
     color: white;
-    font-size: 5.4rem;
+    font-size: 4.4rem;
     line-height: 4.5rem;
     position: absolute;
     bottom: 60px;
@@ -765,7 +706,7 @@ span[data-jarallax-element] {
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
     transform: scale(1.1); } }
-    .wrapper-widget .large-6.cell:nth-child(1), .wrapper-widget .large-6.cell:nth-child(3) {
+    .wrapper-widget .large-6.cell:nth-child(1), .wrapper-widget .large-6.cell:nth-child(3), .wrapper-widget .large-6.cell:nth-child(5), .wrapper-widget .large-6.cell:nth-child(7) {
       padding-right: 0px; }
     .wrapper-widget .large-6.cell:nth-child(3) h2 {
       bottom: 70px; }

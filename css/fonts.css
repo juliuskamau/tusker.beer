@@ -1,0 +1,103 @@
+/**==========================================**
+  CIDER  FONTS CSS 
+**===========================================**/
+
+@font-face {
+	font-family: "Proxima Nova Black";
+	src: url("../fonts/Proxima-Nova-Black.eot");
+	src: url("../fonts/Proxima-Nova-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Proxima-Nova-Black.woff2") format("woff2"), url("../fonts/Proxima-Nova-Black.woff") format("woff"), url("../fonts/Proxima-Nova-Black.ttf") format("truetype"), url("../fonts/Proxima-Nova-Black.svg") format("svg");font-weight: normal;font-style: normal;
+}
+.Proxima-Nova-Black {
+	font-family: "Proxima Nova Black" !important;
+}
+/**==========================================**
+  LITE  FONTS CSS 
+**===========================================**/
+
+@font-face {
+	font-family: "Proxima Nova Light Italic";
+	src: url("../fonts/Proxima-Nova-Light-Italic.eot");
+	src: url("../fonts/Proxima-Nova-Light-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Proxima-Nova-Light-Italic.woff2") format("woff2"), url("../fonts/Proxima-Nova-Light-Italic.woff") format("woff"), url("../fonts/Proxima-Nova-Light-Italic.ttf") format("truetype"), url("../fonts/Proxima-Nova-Light-Italic.svg") format("svg");font-weight: normal;font-style: normal;
+}
+@font-face {
+	font-family: "Proxima Nova Regular Italic";
+	src: url("../fonts/Proxima-Nova-Regular-Italic.eot");
+	src: url("../fonts/Proxima-Nova-Regular-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Proxima-Nova-Regular-Italic.woff2") format("woff2"), url("../fonts/Proxima-Nova-Regular-Italic.woff") format("woff"), url("../fonts/Proxima-Nova-Regular-Italic.ttf") format("truetype"), url("../fonts/Proxima-Nova-Regular-Italic.svg") format("svg");font-weight: normal;font-style: normal;
+}
+@font-face {
+	font-family: "Proxima Nova ExtraBold Italic";
+	src: url("../fonts/Proxima-Nova-ExtraBold-Italic.eot");
+	src: url("../fonts/Proxima-Nova-ExtraBold-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Proxima-Nova-ExtraBold-Italic.woff2") format("woff2"), url("../fonts/Proxima-Nova-ExtraBold-Italic.woff") format("woff"), url("../fonts/Proxima-Nova-ExtraBold-Italic.ttf") format("truetype"), url("../fonts/Proxima-Nova-ExtraBold-Italic.svg") format("svg");font-weight: normal;font-style: normal;
+}
+.Proxima-Nova-Light-Italic {
+	font-family: "Proxima Nova Light Italic" !important;
+}
+.Proxima-Nova-Regular-Italic {
+	font-family: "Proxima Nova Regular Italic" !important;
+}
+.Proxima-Nova-ExtraBold-Italic {
+	font-family: "Proxima Nova ExtraBold Italic" !important;
+}
+/**==========================================**
+  MALT  FONTS CSS 
+**===========================================**/
+
+@font-face {
+	font-family: "Copperplate Bold";
+	src: url("../fonts/Copperplate-Bold.eot");
+	src: url("../fonts/Copperplate-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Copperplate-Bold.woff2") format("woff2"), url("../fonts/Copperplate-Bold.woff") format("woff"), url("../fonts/Copperplate-Bold.ttf") format("truetype"), url("../fonts/Copperplate-Bold.svg") format("svg");
+}
+.Copperplate-Bold {
+	font-family: "Copperplate Bold" !important;
+}
+/**==========================================**
+  LAGER  FONTS CSS 
+**===========================================**/
+
+@font-face {
+	font-family: "Chivo Black";
+	src: url("../fonts/Chivo-Black.eot");
+	src: url("../fonts/Chivo-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Chivo-Black.woff2") format("woff2"), url("../fonts/Chivo-Black.woff") format("woff"), url("../fonts/Chivo-Black.ttf") format("truetype"), url("../fonts/Chivo-Black.svg") format("svg");
+}
+@font-face {
+	font-family: "Chivo Regular";
+	src: url("../fonts/Chivo.eot");
+	src: url("../fonts/Chivo.eot?#iefix") format("embedded-opentype"), url("../fonts/Chivo.woff2") format("woff2"), url("../fonts/Chivo.woff") format("woff"), url("../fonts/Chivo.ttf") format("truetype"), url("../fonts/Chivo.svg") format("svg");
+}
+.Chivo-Black {
+	font-family: "Chivo Black" !important;
+}
+.Chivo-Regular {
+	font-family: "Chivo Regular" !important;
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {@font-face {
+  font-family: 'Chivo Regular';
+  src: url('../fonts/Chivo.svg') format('svg');
+  }}
+
+  @media screen and (-webkit-min-device-pixel-ratio:0) {@font-face {
+    font-family: 'Chivo Black';
+    src: url('../fonts/Chivo-Black.svg') format('svg');
+    }}
+
+    @media screen and (-webkit-min-device-pixel-ratio:0) {@font-face {
+      font-family: 'Copperplate Bold';
+      src: url('../fonts/Copperplate-Bold.svg') format('svg');
+      }}
+
+      @media screen and (-webkit-min-device-pixel-ratio:0) {@font-face {
+        font-family: 'Proxima Nova ExtraBold Italic';
+        src: url('../fonts/Proxima-Nova-ExtraBold-Italic.svg') format('svg');
+        }}
+
+        @media screen and (-webkit-min-device-pixel-ratio:0) {@font-face {
+          font-family: 'Proxima Nova Regular Italic';
+          src: url('../fonts/Proxima-Nova-Regular-Italic.svg') format('svg');
+          }}
+
+          @media screen and (-webkit-min-device-pixel-ratio:0) {@font-face {
+            font-family: 'Proxima Nova Light Italic';
+            src: url('../fonts/Proxima-Nova-Light-Italic.svg') format('svg');
+            }}
